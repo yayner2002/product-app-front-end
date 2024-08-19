@@ -1,4 +1,4 @@
-import logo from "/practica-it-use-logo.png";
+import logo from "/PITlogo.png";
 const NavBar = () => {
   return (
     <>
