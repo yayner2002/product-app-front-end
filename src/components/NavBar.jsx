@@ -1,3 +1,4 @@
+import logo from "/practica-it-use-logo.png";
 const NavBar = () => {
   return (
     <>
@@ -19,7 +20,16 @@ const NavBar = () => {
             fontSize: "24px",
           }}
         >
-          LOGO
+          <img
+            src={logo}
+            alt="practical-logo"
+            style={{
+              width: "60px",
+              height: "60px",
+              display: "block",
+              textIndent: -"9999px",
+            }}
+          />
         </a>
         <div
           style={{
