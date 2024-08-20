@@ -1,9 +1,18 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer>
+      <footer
+        style={{
+          background: "black",
+          color: "white",
+          padding: "1rem",
+          textAlign: "center",
+          marginTop:"0.5rem"
+        }}
+      >
         <div>
-          <p>Product App. All right reserved. 2024.</p>
+          <p>Product App. All right reserved. {currentYear}.</p>
         </div>
         <div>
           <a href="">Privacy Policy</a>
