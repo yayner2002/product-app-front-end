@@ -1,15 +1,6 @@
+/* eslint-disable react/prop-types */
 const Product = (props) => {
-  const {
-    name,
-    description,
-    price,
-    image,
-    brand,
-    category,
-    countInStock,
-    rating,
-    numReviews,
-  } = props.product;
+  const { name, price, image } = props.product;
   return (
     <div
       style={{
@@ -18,18 +9,22 @@ const Product = (props) => {
         margin: "auto",
         textAlign: "center",
         fontFamily: "arial",
-        padding:"1rem",
-        display:"flex",
+        padding: "1rem",
+        display: "flex",
         flexDirection: "column",
-        gap: "1rem"
+        gap: "1rem",
       }}
     >
       <a href="">
-        <img src={image} alt="" style={{
-          width:"100%"
-        }} />
+        <img
+          src={image}
+          alt=""
+          style={{
+            width: "100%",
+          }}
+        />
       </a>
-      <h3 style={{ fontSize: "14px"}}>{name}</h3>
+      <h3 style={{ fontSize: "14px" }}>{name}</h3>
       <p>{price} $</p>
     </div>
   );

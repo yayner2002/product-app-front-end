@@ -1,4 +1,6 @@
 import logo from "/PITlogo.png";
+import { NavLink } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <>
@@ -11,8 +13,8 @@ const NavBar = () => {
           padding: "10px 20px",
         }}
       >
-        <a
-          href="#"
+        <NavLink
+          to="/"
           style={{
             color: "black",
             textDecoration: "none",
@@ -30,25 +32,25 @@ const NavBar = () => {
               textIndent: -"9999px",
             }}
           />
-        </a>
+        </NavLink>
         <div
           style={{
             display: "flex",
             gap: "15px",
           }}
         >
-          <a
-            href=""
+          <NavLink
+            to="/products"
             style={{
               textDecoration: "none",
               fontSize: "18px",
               color: "#fff",
             }}
           >
-            HOME
-          </a>
-          <a
-            href=""
+            PRODUCTS
+          </NavLink>
+          <NavLink
+            to="/about"
             style={{
               textDecoration: "none",
               fontSize: "18px",
@@ -56,9 +58,9 @@ const NavBar = () => {
             }}
           >
             ABOUT
-          </a>
-          <a
-            href=""
+          </NavLink>
+          <NavLink
+            to="/services"
             style={{
               textDecoration: "none",
               fontSize: "18px",
@@ -66,7 +68,17 @@ const NavBar = () => {
             }}
           >
             SERVICES
-          </a>
+          </NavLink>
+          <NavLink
+            to="/add-product"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "#fff",
+            }}
+          >
+            ADD PRODUCT
+          </NavLink>
         </div>
       </nav>
     </>
