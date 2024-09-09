@@ -1,7 +1,7 @@
-import products from "../products";
+/* eslint-disable react/prop-types */
 import Product from "./Product";
 
-const ProductsList = () => {
+const ProductsList = ({ products }) => {
   return (
     <>
       <h1>Featured Products</h1>
@@ -14,7 +14,7 @@ const ProductsList = () => {
         }}
       >
         {products.map((product) => (
-          <Product product={product} key={product._id} />
+          <Product product={product} key={product.name} />
         ))}
       </div>
     </>
