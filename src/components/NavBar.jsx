@@ -79,6 +79,16 @@ const NavBar = () => {
           >
             ADD PRODUCT
           </NavLink>
+          <NavLink
+            to="/auth"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "#fff",
+            }}
+          >
+            LOGIN
+          </NavLink>
         </div>
       </nav>
     </>

@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import Product from "./Product";
+import products from "../products"
 
-const ProductsList = ({ products }) => {
+const ProductsList = () => {
   return (
     <>
       <h1>Featured Products</h1>
